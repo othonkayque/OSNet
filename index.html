@@ -33,8 +33,16 @@
 
         <input type="text" name="local" class="local input-opt" placeholder="Localidade" >
         <input type="text" name="ponto-referencia" class="ponto-referencia input-opt" placeholder="Ponto de referencia" >
-        <input type="date" name="data-pagamento" class="data-pagamento input-opt" placeholder="Data que deseja fazer pagamento">
-            <select name="" id="opt-planos">
+        <!--<input type="date" name="data-pagamento" class="data-pagamento input-opt" placeholder="Data que deseja fazer pagamento">-->
+        <select name="data-pagamento" id="opt-planos" class="data-pagamento input-opt">
+            <option value="5">Dia 5</option> <!-- verificar se esse são os dias mesmo-->
+            <option value="10">Dia 10</option>
+            <option value="15">Dia 15</option>
+            <option value="20">Dia 20</option>
+            <option value="25">Dia 25</option>
+            <option value="30">Dia 30</option>
+        </select>
+            <select name="" id="opt-planos"> <!--colocar o valor de cada plano e colocar os planos reais-->
                 <option value="70">70 Megas</option>
                 <option value="100">100 Megas</option>
                 <option value="300">300 Megas</option>
