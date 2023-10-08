@@ -1,4 +1,5 @@
 *{
+    font-family: arial;
     margin: 0px;
 }
 
@@ -11,7 +12,6 @@
 body{
     display: flex;
     justify-content: center;
-    align-items: center;
     margin-top: 10px;
     background-color: rgb(0, 21, 255);
 }
@@ -28,7 +28,14 @@ body{
 
 .quero-ser{
     color: rgb(255, 153, 0);
+    font-size: 30px;
 }
+
+.os-net{
+    color: white;
+    font-size: 45px;
+}
+
 
 .text-os-net{
     font-size:larger;
@@ -59,12 +66,16 @@ body{
     border-style: none;
 }
 
-#opt-planos{
+#opt-planos, #opt-dia{
     width: 210px;
     height: 40px;
     padding: 5px;
     border-radius: 2px;
     border-style: none;
+}
+
+.dia-pagamentos{
+    background-color: rgb(193, 193, 193);
 }
 
 .btn-infos{
@@ -91,34 +102,60 @@ body{
     cursor: pointer;
 }
 
-
-#CPF-frente, #RG-frente{
-    display: none;
+.data-nasc{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
 }
 
-.CPF-Uploader{
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    color: white;
-    border-style: solid;
-    border-width: 1px;
-    border-radius: 8px;
-    width: 200px;
-    height: 100;
-    padding: 5px;
+.input-data-nasc{
+    width: 50px;
 }
 
-.RG-Uploader{
-    display: flex;
-    justify-content: center;
-    align-content: center;
+label{
+    margin-top: 8px;
+    font-family: Arial, Helvetica, sans-serif;
     color: white;
-    border-style: solid;
-    border-width: 1px;
-    border-radius: 8px;
-    width: 200px;
-    height: 100;
-    padding: 5px;
+}
 
+
+
+
+.incompleto_alerta{
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 9px;
+
+    position: fixed;
+    margin-top: 410px;
+
+    width: 290px;
+    height: 90px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgb(255, 58, 0);
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,20%);
+
+    animation: open ease-in-out 0.5s;
+    
+}
+
+@keyframes open{
+    0% {transform: translateY(200px)}
+    65% {transform: translateY(-30px)}
+    100% {transform: translateY(0px)}
+}
+
+@keyframes alertClose{
+    0% {opacity: 100%;}
+    100% {opacity: 0%;}
+}
+
+
+img{
+    width: 30px;
+    height: 30px;
+    filter: brightness(200);
 }
