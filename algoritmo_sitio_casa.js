@@ -3,7 +3,7 @@ var sitio = document.querySelector("#planos-sitio");
 
 var opt_cidades = document.querySelector("#opt-escolhas")
 var options_cidade_array = ["100 Megas - R$ 69,00","200 Megas - R$ 79,00","300 Megas - R$ 105,00"]
-var options_sitio_array = ["70 Megas - R$ 70,00"]
+var options_sitio_array = ["7 Megas R$ 75,00", "10 Megas R$ 95,00"]
 
 var verificador_cidade = setInterval(() => {
     if(cidade.checked == true){
@@ -22,7 +22,6 @@ var verificador_cidade = setInterval(() => {
         clearInterval(verificador_cidade);
     }    
     else if(sitio.checked == true){
-        option_select.remove()
         var option_select = document.createElement("select")
         option_select.setAttribute("id", "opt-planos")
         option_select.setAttribute("class", "sitio")
