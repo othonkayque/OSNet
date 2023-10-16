@@ -22,12 +22,14 @@ btnPressSend.addEventListener('click', () => {
     var localidade = document.querySelector(".local").value;
     var ponto_referencia = document.querySelector(".ponto-referencia").value;
     var data_pagamento = document.querySelector(".data-pagamento").value;
+
+    var plano_escolhido  = document.querySelector("#plano_escolhido").value;
     
-    var msg_pre_definida = `Nome: ${name}, Data de nascimento: ${dia_nasc}/${mes_nasc}/${ano_nasc}, Email: ${email}, CPF: ${cpf}, RG: ${rg}, Orgão emissor foi: ${orgao_emissor}, Data de emissao: ${dia_emissao}/${mes_emissao}/${ano_emissao}, Localidade: ${localidade}, Ponto Referencia: ${ponto_referencia}, data do pagamento: ${data_pagamento}, Plano: ${opt_select} megas e quero fazer os pagamentos no dia ${opt_dia}. \n *Agora vou enviar imagens da frente e verso do meu CPF e RG*`;
+    var msg_pre_definida = `Plano: ${plano_escolhido}, Nome: ${name}, Data de nascimento: ${dia_nasc}/${mes_nasc}/${ano_nasc}, Email: ${email}, CPF: ${cpf}, RG: ${rg}, Orgão emissor foi: ${orgao_emissor}, Data de emissao: ${dia_emissao}/${mes_emissao}/${ano_emissao}, Localidade: ${localidade}, Ponto Referencia: ${ponto_referencia}, data do pagamento: ${data_pagamento}, Plano: ${opt_select} megas e quero fazer os pagamentos no dia ${opt_dia}. \n *Agora vou enviar imagens da frente e verso do meu CPF e RG*`;
     //var number = "5588994209998"; //Kayque
     var number = "558892900506"; // Loja
     var link = `https://api.whatsapp.com/send?phone=${number}&text=${msg_pre_definida}`;
-    if (name == "" || ano_nasc == "" || email == "" || cpf == "" && RG == "" || localidade == "" || ponto_referencia == ""){
+    if (/*name == "" || ano_nasc == "" || email == "" || cpf == "" && RG == "" || localidade == "" || ponto_referencia == ""*/){
            
         var teste = document.createElement("div")
         var imagem = document.createElement("img");

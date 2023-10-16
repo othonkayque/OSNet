@@ -48,7 +48,6 @@
             <option value="15">Dia 15</option>
             <option value="20">Dia 20</option>
             <option value="25">Dia 25</option>
-            <option value="30">Dia 30</option>
         </select>
             <select name="" id="opt-planos">
                 <option disabled selected>Planos de internet</option>
@@ -57,25 +56,24 @@
                 <option value="300">300 Megas - R$ 105,00</option>
             </select>
 
-            <div>
-
+            <label for="Regiao-planos">Você mora em:</label>
+            <div name="Regiao-planos">
                 <span>
-                    <input type="checkbox" name="cidade" id="planos-cidade">
-                    <label for="cidade">cidade</label>
+                    <input type="radio" id="planos-cidade" name="escolha">
+                    <label for="escolha">Cidade</label>
                 </span>
-
                 <span>
-                    <input type="checkbox" name="sitio" id="planos-sitio">
-                    <label for="sitio">sitio</label>
+                    <!--<input type="checkbox" name="sitio" id="planos-sitio">
+                    <label for="sitio" class="label-check">sitio</label>-->
+
+                    <input type="radio" id="planos-sitio" name="escolha">
+                    <label for="escolha">Sitio</label>
                 </span>
             </div>
-
                 <span id="opt-escolhas">
-
                 </span>
 
                 <script src="algoritmo_sitio_casa.js"></script>                
-
 
             <input type="submit" value="Enviar" class="btn-infos">
     <br><br><br><br><br><br><br>
