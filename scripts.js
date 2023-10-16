@@ -29,7 +29,7 @@ btnPressSend.addEventListener('click', () => {
     //var number = "5588994209998"; //Kayque
     var number = "558892900506"; // Loja
     var link = `https://api.whatsapp.com/send?phone=${number}&text=${msg_pre_definida}`;
-    if (/*name == "" || ano_nasc == "" || email == "" || cpf == "" && RG == "" || localidade == "" || ponto_referencia == ""*/){
+    if (name == "" || ano_nasc == "" || email == "" || cpf == "" && RG == "" || localidade == "" || ponto_referencia == ""){
            
         var teste = document.createElement("div")
         var imagem = document.createElement("img");
