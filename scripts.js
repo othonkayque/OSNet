@@ -26,7 +26,7 @@ btnPressSend.addEventListener('click', () => {
     var link = `https://api.whatsapp.com/send?phone=${number}&text=${msg_pre_definida}`;
 
 
-    if (name == "" || ano_nasc == "" || email == "" || cpf == "" && rgteste == "" || localidade == "" || ponto_referencia == "" || numero_casa == ""){
+    if (name == "" || ano_nasc == "" || cpf == "" && rgteste == "" || localidade == "" || ponto_referencia == "" || numero_casa == ""){
         var container = document.querySelector(".container-1")
         var teste = document.createElement("div")
         var imagem = document.createElement("img");
